@@ -3,10 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage - MyBeverages</title>
+    <title>MyBeverages - Your Personal Drink Tracker</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #007AFF;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .feature-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .app-screenshot {
+            max-width: 300px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .download-section {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #f0f0f0;
+            margin-top: 40px;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007AFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to MyBeverages</h1>
-    <p>This is a basic HTML page.</p>
+    <header>
+        <div class="container">
+            <h1>MyBeverages</h1>
+            <p>Your Personal Drink Tracker and BAC Calculator</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>About MyBeverages</h2>
+            <p>MyBeverages is a comprehensive iOS app designed to help you track your beverage consumption, monitor your blood alcohol content (BAC), and maintain healthy drinking habits. Whether you're enjoying a casual drink or need to monitor your alcohol intake, MyBeverages provides the tools you need to make informed decisions.</p>
+        </section>
+
+        <section>
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">                  
+                    <h3>Real-time BAC Tracking</h3>
+                    <p>Monitor your blood alcohol content in real-time with our accurate BAC calculator. The app considers your weight, gender, and food intake to provide precise estimates.</p>
+	                 <img src="app home small.png" alt="BAC Gauge">
+                </div>
+
+                <div class="feature-card">
+                    
+                    <h3>Water Intake Monitoring</h3>
+                    <p>Track your daily water consumption with our intuitive water gauge. Set daily goals and monitor your progress throughout the day.</p>
+               <img src="Water_gauge.png" alt="Water Intake Tracker">
+                </div>
+
+                <div class="feature-card">
+                    <h3>Comprehensive Drink History</h3>
+                    <p>Keep a detailed record of all your beverages, including type, volume, and alcohol content. View your drinking patterns over time.</p>
+                              <img src="history.png" alt="Drink History">
+
+                </div>
+
+                <div class="feature-card">
+                    <h3>Quick Add Drinks</h3>
+                    <p>Add your favorite drinks quickly with customizable default values for volume and alcohol content. Supports various drink types including beer, wine, spirits, and more.</p>
+                              <img src="quick_add.png" alt="Quick Add Feature">
+     </div>
+
+                <div class="feature-card">
+                    <h3>Detailed Analytics</h3>
+                    <p>View comprehensive statistics about your drinking habits, including weekly and monthly summaries, drinking patterns, and BAC trends.</p>
+                                <img src="Analytics.png" alt="Analytics">
+    </div>
+
+                <div class="feature-card">
+                    <h3>Personalized Profile</h3>
+                    <p>Customize your experience with personal settings, including weight, height, gender, and preferred units of measurement.</p>
+                                  <img src="Profile.png" alt="User Profile">
+  </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Safety Features</h2>
+            <ul>
+                <li>Real-time BAC monitoring with degradation calculations</li>
+                <li>Customizable safe BAC threshold</li>
+                <li>Time until sober estimation</li>
+                <li>Water intake recommendations</li>
+                <li>Drinking pattern analysis</li>
+            </ul>
+        </section>
+        <center>  
+       <section>
+            <h2>Disclaimer</h2>
+           
+        <a href="disclaimer.html" class="button">Disclaimer</a>
+        </section>
+        
+        <section class="download-section">
+            <h2>Download MyBeverages</h2>
+            <p>Available now on the App Store</p>
+            <a href="#" class="button">Download on the App Store</a>
+        </section>
+    </div>
+   </center> 
+    <footer style="text-align: center; padding: 20px; background-color: #333; color: white;">
+        <p>&copy; 2024 MyBeverages. All rights reserved.</p>
+    </footer>
 </body>
 </html>
